@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Analysis for Retail Data | Ahmed Sharaf</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">AS<span class="accent">.</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section project-detail">
+            <div class="container">
+                <a href="index.html#projects" class="back-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    Back to Projects
+                </a>
+
+                <h1 class="project-detail-title">Sales Analysis for Retail Data</h1>
+                <div class="project-meta">
+                    <span class="project-tag">Pandas</span>
+                    <span class="project-tag">Data Visualization</span>
+                    <span class="project-tag">EDA</span>
+                </div>
+
+                <div class="project-content-block">
+                    <h2>Objective</h2>
+                    <p>This project aims to conduct exploratory data analysis (EDA) on retail sales data using Python
+                        and the Pandas library. It seeks to derive insights into sales trends, top products, preferred
+                        shipping modes, and profitable product categories and sub-categories.</p>
+                </div>
+
+                <div class="project-content-block">
+                    <h2>Project Overview</h2>
+
+                    <div class="step-item">
+                        <h3>Importing Required Libraries</h3>
+                        <p>Essential libraries like Pandas, Matplotlib, and Seaborn are imported for data manipulation
+                            and visualization.</p>
+                    </div>
+
+                    <div class="step-item">
+                        <h3>Importing the Dataset</h3>
+                        <p>The dataset 'superstore_sales.xlsx' is loaded into a Pandas DataFrame for analysis.</p>
+                    </div>
+
+                    <div class="step-item">
+                        <h3>Data Audit</h3>
+                        <p>Tasks include:</p>
+                        <ul>
+                            <li>Displaying the first five rows of the dataset.</li>
+                            <li>Determining dataset shape (rows and columns).</li>
+                            <li>Listing dataset columns.</li>
+                            <li>Providing a summary of data, including data types and non-null counts.</li>
+                            <li>Checking for missing values.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-content-block">
+                    <h2>Exploratory Data Analysis (EDA)</h2>
+
+                    <div class="step-item">
+                        <h3>a. Overall Sales Trend</h3>
+                        <p>Extracting 'month_year' from 'order_date' column. Grouping data by 'month_year' and
+                            calculating total monthly sales. Visualizing sales trend with a line plot.</p>
+                        <img src="assets/sales_trend.jpg" alt="Overall Sales Trend Line Chart" class="project-img">
+                    </div>
+
+                    <div class="step-item">
+                        <h3>b. Top 10 Products by Sales</h3>
+                        <p>Grouping data by 'product_name' and calculating total sales for each product. Sorting
+                            products by sales and selecting top 10.</p>
+                        <img src="assets/sales_top_products.jpg" alt="Top 10 Products by Sales Table"
+                            class="project-img">
+                    </div>
+
+                    <div class="step-item">
+                        <h3>c. Most Preferred Ship Mode</h3>
+                        <p>Creating a count plot to show distribution of ship modes.</p>
+                        <img src="assets/sales_ship_mode.jpg" alt="Ship Mode Distribution Bar Chart"
+                            class="project-img">
+                    </div>
+
+                    <div class="step-item">
+                        <h3>d. Most Profitable Category and Sub-Category</h3>
+                        <p>Grouping data by 'category' and 'sub_category' to calculate total profit. Sorting values to
+                            identify most profitable categories and sub-categories.</p>
+                        <img src="assets/sales_profit_category.jpg" alt="Profit by Category Table" class="project-img">
+                    </div>
+                </div>
+
+                <div class="project-content-block">
+                    <h2>Conclusion</h2>
+                    <p>This project illustrates how Pandas, Matplotlib, and Seaborn can be used for thorough data
+                        analysis. Insights gained about sales trends, top products, shipping preferences, and profitable
+                        categories/sub-categories can guide business decisions and strategies, enhancing retail
+                        operations and profitability. It serves as a practical example of data analysis in the retail
+                        sector, highlighting Python and Pandas for data-driven decision-making.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ahmed Sharaf. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
