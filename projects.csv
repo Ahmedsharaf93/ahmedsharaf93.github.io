@@ -1,0 +1,4 @@
+id,title,description,tags,image,link,content_html
+1,Amazon Web Scraper,A Python-based tool that scrapes product data from Amazon, including titles, prices, and ratings.,Python;Selenium;Web Scraping,assets/amazon_placeholder.jpg,project-amazon.html,
+2,Sales Analysis for Retail Data,Exploratory data analysis (EDA) on retail sales data to identify trends and top-performing products.,Python;Pandas;Data Visualization,assets/sales_trend.jpg,project-sales.html,
+3,Future Project Example,This is an example of how a new project would look. You can edit this in Excel!,Excel;Data Entry,assets/placeholder.jpg,,<p>This is the detailed content of the new project. You can write <b>bold text</b> or add lists here.</p><ul><li>Step 1</li><li>Step 2</li></ul>
